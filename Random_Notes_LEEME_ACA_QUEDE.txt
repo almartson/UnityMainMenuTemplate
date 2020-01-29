@@ -1,0 +1,28 @@
+﻿Quedé en
+
+https://learn.unity.com/tutorial/live-sessions-on-ui#5c7f8528edbc2a002053b4b3
+
+video minuto 38. exacto
+
+333333E6
+
+FFFFFFFF
+000000FF
+C8C8C8FF
+
+1-	MENU DE UNITY
+
+	.1-		Buenas Prácticas.
+	
+		* 	Corrutina del: LOADING SLIDER BAR.	---listo!
+		->
+		Lo optimizable es copiarse del estilo de 'LeftRightTest.cs'.
+		->
+		Si hay un WaitFor...: Cachearlo al inicio.
+		->
+		Cachear al inicio StartCoroutine( IENumeratorMio )
+		->
+		Cachear 'IENumeratorMio' (puede ser reusable, haciendo: StopCoroutine() y StartCoroutine(), en un OnEnable() y OnDisable()... ).
+		->
+		yield return null; // ya está optimzado: espera hasta fin de siguiente FRAME.
+		
