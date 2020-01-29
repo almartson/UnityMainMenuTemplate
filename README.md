@@ -11,7 +11,7 @@ https://learn.unity.com/tutorial/live-sessions-on-ui#5c7f8528edbc2a002053b4b3
 
 * Also I am sharing in the Assets Folder some good Debugging Tools I customized for my needs (you can make good use of them, according to the M.I.T.'s Licence statements). The Folder's path and name are: 'Assets/_DebugToolsAlMartson'
 
-* In the path 'Assets/UnityMenu' I included a great Unity Offcial Asset: <strong>Unity Samples: UI <\strong> (https://assetstore.unity.com/packages/essentials/unity-samples-ui-25468)
+* In the path 'Assets/UnityMenu' I included a great Unity Offcial Asset: <strong>Unity Samples: UI </strong> (https://assetstore.unity.com/packages/essentials/unity-samples-ui-25468)
 
 Have fun!
 
