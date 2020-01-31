@@ -10,19 +10,31 @@ FFFFFFFF
 000000FF
 C8C8C8FF
 
-1-	MENU DE UNITY
+1-	UNITY MENU 
 
-	.1-		Buenas Prácticas.
+	.1-		Best Practices.
 	
-		* 	Corrutina del: LOADING SLIDER BAR.	---listo!
+		* 	Coroutine: LOADING SLIDER BAR.	---listo!
 		->
-		Lo optimizable es copiarse del estilo de 'LeftRightTest.cs'.
+		I can optimize Coroutines, with the same Methodollogy applied in my Script  'LeftRightTest.cs', from my previous Project.
 		->
-		Si hay un WaitFor...: Cachearlo al inicio.
+		WaitFor...: MUST be Cached at the Start or Awake Method.
 		->
-		Cachear al inicio StartCoroutine( IENumeratorMio )
+		To cache in a Start or Awake Method:   StartCoroutine( IENumeratorMio )
 		->
-		Cachear 'IENumeratorMio' (puede ser reusable, haciendo: StopCoroutine() y StartCoroutine(), en un OnEnable() y OnDisable()... ).
+		To Cache 'IENumeratorMio' (thus making it reusable, by means of: StopCoroutine() y StartCoroutine(), in OnEnable() and OnDisable()... ).
 		->
-		yield return null; // ya está optimzado: espera hasta fin de siguiente FRAME.
+		yield return null; // It is already optimum: it waits until the END of the NEXT FRAME
 		
+---
+
+2-  IMPORTANT:  It features TEXTMESHPRO, but the PREFORMANCE CAN BE BETTER:
+
+    .1- REPLACE all STATIC TEXT (e.g.: Static LABELS) by:  Image (a Texture or Sprite ade in Photoshop using 'Bicubic for optimal Reduction in size') (using my CUSTOM UI MATERIAL, to let UNITY make use of Static BATCHING)
+    
+    .2- Only use TEXTMESHPRO TEXT Box in cases where you need DYNAMIC-CHANGIN Text (for instance: in the Loading % Number - Progress Bar).
+
+    .3- Changing TEXTMESHPRO's Shader from ''SDF-Mobile-distance field'' to -> ''SDF-Mobile-Bitmap''  could serve as an Optimization, but You Shoul read how to MAKE AN HIGH QUALITY FONT ATLAS, because I tested it and it Looked Blurry and did not pass the text.
+  
+  
+    

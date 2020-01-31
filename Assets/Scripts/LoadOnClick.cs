@@ -7,19 +7,19 @@ public class LoadOnClick : MonoBehaviour
 {
 
     /// <summary>
-    /// My loading image.
+    /// (Canvas Component of): Image with Slider and al UI stuff that will appear: while Loading.
     /// </summary>
-    [Tooltip("Image with Slider and al UI stuff that will appear: while Loading.")]
-    public GameObject _myLoadingImage;
+    [Tooltip("(Canvas Component of): Image with Slider and al UI stuff that will appear: while Loading.")]
+    public /*GameObject*/ Canvas _myCanvasComponentOfLoadingImage;
 
 
     public void LoadScene(int level)
     {
         // Set the image as: Active.
         //
-        if ( this._myLoadingImage != null )
+        if ( this._myCanvasComponentOfLoadingImage != null )
         {
-            this._myLoadingImage.SetActive(true);
+            this._myCanvasComponentOfLoadingImage.enabled = true;
 
         }//End if
         //

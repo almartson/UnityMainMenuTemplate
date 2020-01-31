@@ -81,6 +81,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _Diffuse: 0.5
+    - _DiffusePower: 1
     - _DstBlend: 0
     - _FaceDilate: 0
     - _FaceUVSpeedX: 0

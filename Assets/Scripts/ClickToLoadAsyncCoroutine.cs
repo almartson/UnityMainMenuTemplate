@@ -12,10 +12,10 @@ public class ClickToLoadAsyncCoroutine : MonoBehaviour
     public Slider _myLoadingBar;
 
     /// <summary>
-    /// My loading image.
+    /// (Canvas of) Image with Slider and al UI stuff that will appear: while Loading.
     /// </summary>
-    [Tooltip("Image with Slider and al UI stuff that will appear: while Loading.")]
-    public GameObject _myLoadingImage;
+    [Tooltip("(Canvas of) Image with Slider and al UI stuff that will appear: while Loading.")]
+    public Canvas _myCanvasComponentOfLoadingImage;
 
     /// <summary>
     /// Async operation object, which will allow for 'asking questions', such as: 'Are you done?'.
@@ -27,8 +27,17 @@ public class ClickToLoadAsyncCoroutine : MonoBehaviour
 
     public void ClickAsync(int level)
     {
-        _myLoadingImage.SetActive(true);
+        ///_myLoadingImage.SetActive(true); // This is SubOptimal.
+        // Set the image as: Active.
+        //
+        if (this._myCanvasComponentOfLoadingImage != null)
+        {
+            this._myCanvasComponentOfLoadingImage.enabled = true;
+
+        }//End if
+        //
         StartCoroutine(LoadLevelWithBar(level));
+
     }//End Method
 
 
