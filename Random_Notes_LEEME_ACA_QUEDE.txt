@@ -28,13 +28,20 @@ C8C8C8FF
 		
 ---
 
-2-  IMPORTANT:  It features TEXTMESHPRO, but the PREFORMANCE CAN BE BETTER:
+2-  IMPORTANT:  It features TEXTMESHPRO, but the PREFORMANCE CAN BE BETTER  (HOW?):
 
-    .1- REPLACE all STATIC TEXT (e.g.: Static LABELS) by:  Image (a Texture or Sprite ade in Photoshop using 'Bicubic for optimal Reduction in size') (using my CUSTOM UI MATERIAL, to let UNITY make use of Static BATCHING)
-    
-    .2- Only use TEXTMESHPRO TEXT Box in cases where you need DYNAMIC-CHANGIN Text (for instance: in the Loading % Number - Progress Bar).
+Recommendations:
 
-    .3- Changing TEXTMESHPRO's Shader from ''SDF-Mobile-distance field'' to -> ''SDF-Mobile-Bitmap''  could serve as an Optimization, but You Shoul read how to MAKE AN HIGH QUALITY FONT ATLAS, because I tested it and it Looked Blurry and did not pass the text.
+
+    .1- REPLACE all STATIC TEXT (e.g.: Static LABELS) by:  Image (a Texture or Sprite ade in Photoshop [using 'Bicubic for optimal Reduction in size' for Rendering]). 
+
+    In Unity3D:   Use my CUSTOM UI MATERIAL, to make use of Static and Dynamic BATCHING).
+
+
+    .2- Only use TEXTMESHPRO TEXT Box in cases where you need DYNAMIC-CHANGING Text (for instance: in the Loading % Number - Progress Bar).
+
+
+    .3- Changing TEXTMESHPRO's Shader from ''SDF-Mobile-distance field'' to -> ''SDF-Mobile-Bitmap''  could serve as an Optimization, but You Shoul read how to MAKE AN HIGH QUALITY FONT ATLAS, because I tested the one that comes by 'default' for ARIAL FONT: and it Looked Blurry and did not pass the text.
   
   
     
